@@ -1,0 +1,94 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e2d0d0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    text-decoration:underline;
+    color:#e74c3c;
+}
+
+/* Bannière */
+.banner {
+    text-align: center;
+    padding: 50px;
+    background-color: #8ba896;
+    color: white;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    border-color: #ffffff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.6s ease-out;
+}
+
+.cta-btn:hover {
+    color: #e74c3c;
+    background-color: #ffffff;
+    transform: scale(1.15);
+}
+
+/* Galerie d'images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    margin: 0;
+    border-radius: 15px;
+    /*object-fit: contain;
+    height: 500px;*/
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    transform:scale(1.04);
+}
+
+/* Vidéo */
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-section video {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
